@@ -20,7 +20,7 @@ import android.widget.Toast;
  */
 public class MenuFragment extends Fragment {
 
-    private ImageButton mHotelButton;
+    private ImageButton mImBHotel, mImBAtm, mImBHospital, mImBBus;
 
     public MenuFragment() {
         // Required empty public constructor
@@ -53,21 +53,59 @@ public class MenuFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View layout = inflater.inflate(R.layout.fragment_menu, container, false);
-        mHotelButton = layout.findViewById(R.id.main_activity_imb_hotel);
-        mHotelButton.setOnClickListener(new View.OnClickListener() {
+        mImBHotel = layout.findViewById(R.id.main_activity_imb_hotel);
+        mImBAtm = layout.findViewById(R.id.main_activity_imb_atm);
+        mImBHospital = layout.findViewById(R.id.main_activity_imb_hospital);
+        mImBBus = layout.findViewById(R.id.main_activity_imb_bus);
+
+        mImBHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getContext(), "clicked", Toast.LENGTH_SHORT).show();
-                Fragment hotelFragment = new Fragment();
+                Fragment hotelFragment = new HotelFragment();
                 FragmentManager fragmentManager = getFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.frame_layout, hotelFragment)
+                fragmentManager
+                        .beginTransaction()
+                        .replace(R.id.frame_layout, hotelFragment)
+                        .addToBackStack(null)
                         .commit();
             }
         });
-
-
+        mImBAtm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment atmFragment = new AtmFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager
+                        .beginTransaction()
+                        .replace(R.id.frame_layout, atmFragment)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        mImBHospital.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment hospitalFragment = new HospitalFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager
+                        .beginTransaction()
+                        .replace(R.id.frame_layout, hospitalFragment)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        mImBBus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment busFragment = new BusFragment();
+                FragmentManager fragmentManager = getFragmentManager();
+                fragmentManager
+                        .beginTransaction()
+                        .replace(R.id.frame_layout, busFragment)
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
         return layout;
-
-
     }
 }
