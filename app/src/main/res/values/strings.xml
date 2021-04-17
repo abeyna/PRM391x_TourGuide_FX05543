@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PRM391x_TourGuide_FX05543</string>
+    <string name="location_title">HCMC, Vietnam</string>
+    <string name="hotel_title">Khách sạn</string>
+    <string name="atm_title">ATM</string>
+    <string name="hospital_title">Bệnh viện</string>
+    <string name="bus_title">Xe Bus</string>
+
+    <string name="hotel_01_title">Vinpearl Luxury Landmark 81</string>
+    <string name="hotel_01_address">720A Điện Biên Phủ Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh 700000 Việt Nam</string>
+    <string name="hotel_02_title">Lotte Hotel Saigon</string>
+    <string name="hotel_02_address">2A - 4A Tôn Đức Thắng, Quận 1, Thành phố Hồ Chí Minh 70000 Việt Nam</string>
+    <string name="hotel_03_title">Park Hyatt Sài Gòn</string>
+    <string name="hotel_03_address">Số 2 Công Trường Lam Sơn, Phường Bến Nghé, Quận 1, Thành phố Hồ Chí Minh 70000 Việt Nam</string>
+    <string name="hotel_04_title">Hotel Nikko Saigon</string>
+    <string name="hotel_04_address">235 Nguyễn Văn Cừ, Thành phố Hồ Chí Minh Việt Nam</string>
+    <string name="hotel_05_title">Pullman Saigon Centre</string>
+    <string name="hotel_05_address">148 Trần Hưng Đạo Quận 1, Thành phố Hồ Chí Minh 700000 Việt Nam</string>
+    <string name="hotel_06_title">Hotel des Arts Saigon Mgallery</string>
+    <string name="hotel_06_address">76-78 Nguyễn Thị Minh Khai, Quận 3, Thành phố Hồ Chí Minh 700000 Việt Nam</string>
+    <string name="hotel_07_title">Sofitel Sài Gòn Plaza</string>
+    <string name="hotel_07_address">17 Lê Duẩn, Quận 1, Thành phố Hồ Chí Minh 70000 Việt Nam</string>
+    <string name="hotel_08_title">Khách sạn Caravelle Sài Gòn</string>
+    <string name="hotel_08_address">19-23 Công Trường Lam Sơn, Quận 1, Thành phố Hồ Chí Minh 700000 Việt Nam</string>
+    <string name="hotel_09_title">Khách sạn New World Sài Gòn</string>
+    <string name="hotel_09_address">76 Lê Lai, Quận 1, Thành phố Hồ Chí Minh 70000 Việt Nam</string>
+    <string name="hotel_10_title">Mia Saigon Luxury Boutique Hotel</string>
+    <string name="hotel_10_address">2-4 Đường số 10, phường An Phú, Quận 2, Thành phố Hồ Chí Minh 700000 Việt Nam</string>
+</resources>
