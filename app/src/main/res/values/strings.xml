@@ -26,4 +26,6 @@
     <string name="hotel_09_address">76 Lê Lai, Quận 1, Thành phố Hồ Chí Minh 70000 Việt Nam</string>
     <string name="hotel_10_title">Mia Saigon Luxury Boutique Hotel</string>
     <string name="hotel_10_address">2-4 Đường số 10, phường An Phú, Quận 2, Thành phố Hồ Chí Minh 700000 Việt Nam</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
