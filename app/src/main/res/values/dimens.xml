@@ -5,4 +5,8 @@
     <dimen name="flag_height">150dp</dimen>
     <dimen name="layout_width">150dp</dimen>
     <dimen name="layout_height">100dp</dimen>
+    <dimen name="text_name">15sp</dimen>
+    <dimen name="text_padding">16dp</dimen>
+    <dimen name="layout_width_list">80dp</dimen>
+    <dimen name="layout_height_list">75dp</dimen>
 </resources>
