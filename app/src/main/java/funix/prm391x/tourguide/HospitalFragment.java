@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class HospitalFragment extends Fragment {
     private RecyclerView mRecyclerViewHospital;
-    private ArrayList<GuidePlace> hospitalList;
+    private ArrayList<GuidePlace> hospitalList = new ArrayList<>();
 
     @Nullable
     @Override

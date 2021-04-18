@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 public class BusFragment extends Fragment {
     private RecyclerView mRecyclerViewBus;
-    private ArrayList<GuidePlace> busList;
+    private ArrayList<GuidePlace> busList = new ArrayList<>();
 
     @Nullable
     @Override
