@@ -22,6 +22,7 @@ public class AtmFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(R.string.atm_title);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         View layout = inflater.inflate(R.layout.fragment_place, container, false);
         mRecyclerViewAtm = layout.findViewById(R.id.fragment_place_rv);
