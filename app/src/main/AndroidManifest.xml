@@ -9,10 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PRM391x_TourGuide_FX05543">
-        <activity android:name=".BusFragment"></activity>
-        <activity android:name=".HospitalFragment" />
-        <activity android:name=".AtmFragment" />
-        <activity android:name=".HotelFragment" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

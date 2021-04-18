@@ -1,14 +1,19 @@
 package funix.prm391x.tourguide;
 
 import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ActionBar;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toolbar;
 
 import java.util.ArrayList;
 
@@ -19,6 +24,8 @@ public class HotelFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(R.string.hotel_title);
+
         View layout = inflater.inflate(R.layout.fragment_place, container, false);
         mRecyclerViewHotel = layout.findViewById(R.id.fragment_place_rv);
 

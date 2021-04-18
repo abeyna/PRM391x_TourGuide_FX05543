@@ -1,7 +1,9 @@
 package funix.prm391x.tourguide;
 
+import android.app.ActionBar;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.DividerItemDecoration;
@@ -51,6 +53,9 @@ public class MenuFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(R.string.app_name);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+
         // Inflate the layout for this fragment
         View layout = inflater.inflate(R.layout.fragment_menu, container, false);
         mImBHotel = layout.findViewById(R.id.main_activity_imb_hotel);
