@@ -26,16 +26,16 @@ public class HospitalFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_place, container, false);
         mRecyclerViewHospital = layout.findViewById(R.id.fragment_place_rv);
 
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_01), getResources().getString(R.string.hospital_01_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_02), getResources().getString(R.string.hospital_02_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_03), getResources().getString(R.string.hospital_03_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_04), getResources().getString(R.string.hospital_04_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_05), getResources().getString(R.string.hospital_05_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_06), getResources().getString(R.string.hospital_06_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_07), getResources().getString(R.string.hospital_07_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_08), getResources().getString(R.string.hospital_08_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_09), getResources().getString(R.string.hospital_09_address)));
-        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_10), getResources().getString(R.string.hospital_10_address)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_01), getResources().getString(R.string.hospital_01_address), getResources().getString(R.string.hospital_01_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_02), getResources().getString(R.string.hospital_02_address), getResources().getString(R.string.hospital_02_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_03), getResources().getString(R.string.hospital_03_address), getResources().getString(R.string.hospital_03_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_04), getResources().getString(R.string.hospital_04_address), getResources().getString(R.string.hospital_04_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_05), getResources().getString(R.string.hospital_05_address), getResources().getString(R.string.hospital_05_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_06), getResources().getString(R.string.hospital_06_address), getResources().getString(R.string.hospital_06_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_07), getResources().getString(R.string.hospital_07_address), getResources().getString(R.string.hospital_07_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_08), getResources().getString(R.string.hospital_08_address), getResources().getString(R.string.hospital_08_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_09), getResources().getString(R.string.hospital_09_address), getResources().getString(R.string.hospital_09_url)));
+        hospitalList.add(new GuidePlace(R.drawable.hospital, getResources().getString(R.string.hospital_10), getResources().getString(R.string.hospital_10_address), getResources().getString(R.string.hospital_10_url)));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(layout.getContext(), LinearLayoutManager.VERTICAL, false);
         mRecyclerViewHospital.setLayoutManager(layoutManager);

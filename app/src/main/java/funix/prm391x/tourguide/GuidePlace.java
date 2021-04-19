@@ -4,11 +4,13 @@ public class GuidePlace {
     private int image;
     private String name;
     private String address;
+    private String url;
 
-    public GuidePlace(int image, String title, String address) {
+    public GuidePlace(int image, String title, String address, String url) {
         this.image = image;
         this.name = title;
         this.address = address;
+        this.url = url;
     }
 
     public int getImage() {
@@ -33,5 +35,13 @@ public class GuidePlace {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

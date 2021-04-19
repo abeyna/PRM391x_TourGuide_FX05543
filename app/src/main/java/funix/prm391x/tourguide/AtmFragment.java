@@ -27,16 +27,16 @@ public class AtmFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_place, container, false);
         mRecyclerViewAtm = layout.findViewById(R.id.fragment_place_rv);
 
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_01), getResources().getString(R.string.atm_01_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_02), getResources().getString(R.string.atm_02_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_03), getResources().getString(R.string.atm_03_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_04), getResources().getString(R.string.atm_04_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_05), getResources().getString(R.string.atm_05_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_06), getResources().getString(R.string.atm_06_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_07), getResources().getString(R.string.atm_07_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_08), getResources().getString(R.string.atm_08_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_09), getResources().getString(R.string.atm_09_address)));
-        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_10), getResources().getString(R.string.atm_10_address)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_01), getResources().getString(R.string.atm_01_address), getResources().getString(R.string.atm_01_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_02), getResources().getString(R.string.atm_02_address), getResources().getString(R.string.atm_02_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_03), getResources().getString(R.string.atm_03_address), getResources().getString(R.string.atm_03_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_04), getResources().getString(R.string.atm_04_address), getResources().getString(R.string.atm_04_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_05), getResources().getString(R.string.atm_05_address), getResources().getString(R.string.atm_05_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_06), getResources().getString(R.string.atm_06_address),getResources().getString(R.string.atm_06_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_07), getResources().getString(R.string.atm_07_address), getResources().getString(R.string.atm_07_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_08), getResources().getString(R.string.atm_08_address), getResources().getString(R.string.atm_08_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_09), getResources().getString(R.string.atm_09_address), getResources().getString(R.string.atm_09_url)));
+        atmList.add(new GuidePlace(R.drawable.atm_machine, getResources().getString(R.string.atm_10), getResources().getString(R.string.atm_10_address), getResources().getString(R.string.atm_10_url)));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(layout.getContext(), LinearLayoutManager.VERTICAL, false);
         mRecyclerViewAtm.setLayoutManager(layoutManager);

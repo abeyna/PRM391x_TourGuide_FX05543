@@ -28,16 +28,16 @@ public class BusFragment extends Fragment {
         View layout = inflater.inflate(R.layout.fragment_place, container, false);
         mRecyclerViewBus = layout.findViewById(R.id.fragment_place_rv);
 
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_01), getResources().getString(R.string.bus_01_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_02), getResources().getString(R.string.bus_02_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_03), getResources().getString(R.string.bus_03_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_04), getResources().getString(R.string.bus_04_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_05), getResources().getString(R.string.bus_05_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_06), getResources().getString(R.string.bus_06_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_07), getResources().getString(R.string.bus_07_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_08), getResources().getString(R.string.bus_08_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_09), getResources().getString(R.string.bus_09_destination)));
-        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_10), getResources().getString(R.string.bus_10_destination)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_01), getResources().getString(R.string.bus_01_destination), getResources().getString(R.string.bus_01_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_02), getResources().getString(R.string.bus_02_destination), getResources().getString(R.string.bus_02_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_03), getResources().getString(R.string.bus_03_destination), getResources().getString(R.string.bus_03_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_04), getResources().getString(R.string.bus_04_destination), getResources().getString(R.string.bus_04_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_05), getResources().getString(R.string.bus_05_destination), getResources().getString(R.string.bus_05_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_06), getResources().getString(R.string.bus_06_destination), getResources().getString(R.string.bus_06_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_07), getResources().getString(R.string.bus_07_destination), getResources().getString(R.string.bus_07_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_08), getResources().getString(R.string.bus_08_destination), getResources().getString(R.string.bus_08_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_09), getResources().getString(R.string.bus_09_destination), getResources().getString(R.string.bus_09_url)));
+        busList.add(new GuidePlace(R.drawable.metro, getResources().getString(R.string.bus_10), getResources().getString(R.string.bus_10_destination), getResources().getString(R.string.bus_10_url)));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(layout.getContext(), LinearLayoutManager.VERTICAL, false);
         mRecyclerViewBus.setLayoutManager(layoutManager);

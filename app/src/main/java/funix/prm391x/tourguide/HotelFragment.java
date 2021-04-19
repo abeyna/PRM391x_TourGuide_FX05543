@@ -26,16 +26,16 @@ public class HotelFragment extends Fragment {
 
         mRecyclerViewHotel = layout.findViewById(R.id.fragment_place_rv);
 
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_01), getResources().getString(R.string.hotel_01_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_02), getResources().getString(R.string.hotel_02_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_03), getResources().getString(R.string.hotel_03_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_04), getResources().getString(R.string.hotel_04_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_05), getResources().getString(R.string.hotel_05_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_06), getResources().getString(R.string.hotel_06_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_07), getResources().getString(R.string.hotel_07_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_08), getResources().getString(R.string.hotel_08_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_09), getResources().getString(R.string.hotel_09_address)));
-        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_10), getResources().getString(R.string.hotel_10_address)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_01), getResources().getString(R.string.hotel_01_address), getResources().getString(R.string.hotel_01_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_02), getResources().getString(R.string.hotel_02_address), getResources().getString(R.string.hotel_02_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_03), getResources().getString(R.string.hotel_03_address),getResources().getString(R.string.hotel_03_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_04), getResources().getString(R.string.hotel_04_address), getResources().getString(R.string.hotel_04_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_05), getResources().getString(R.string.hotel_05_address), getResources().getString(R.string.hotel_05_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_06), getResources().getString(R.string.hotel_06_address), getResources().getString(R.string.hotel_06_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_07), getResources().getString(R.string.hotel_07_address), getResources().getString(R.string.hotel_07_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_08), getResources().getString(R.string.hotel_08_address), getResources().getString(R.string.hotel_08_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_09), getResources().getString(R.string.hotel_09_address), getResources().getString(R.string.hotel_09_url)));
+        hotelList.add(new GuidePlace(R.drawable.hotel, getResources().getString(R.string.hotel_10), getResources().getString(R.string.hotel_10_address), getResources().getString(R.string.hotel_10_url)));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(layout.getContext(), LinearLayoutManager.VERTICAL, false);
         mRecyclerViewHotel.setLayoutManager(layoutManager);
