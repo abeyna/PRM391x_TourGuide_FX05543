@@ -17,15 +17,15 @@ import android.widget.ImageButton;
 import java.util.ArrayList;
 
 /**
- * A simple {@link Fragment} subclass.
- * Use the {@link MenuFragment#newInstance} factory method to
- * create an instance of this fragment.
+ * @author Luan N Nguyen
+ * @since April 20th 2021
+ * MenuFragment for main display.
  */
 public class MenuFragment extends Fragment {
+    /** Variables for ImageButtons include Hotel, ATM, Hospital and Bus Station*/
     private ImageButton mImBHotel, mImBAtm, mImBHospital, mImBBus;
 
     public MenuFragment() {
-        // Required empty public constructor
     }
 
     /**
@@ -50,19 +50,30 @@ public class MenuFragment extends Fragment {
 
     }
 
+    /**
+     * Called to have the fragment instantiate its user interface view.
+     * @param inflater
+     *                     The LayoutInflater object that can be used to inflate any views in the fragment.
+     * @param container
+     *                     The parent view that the fragment's UI should be attached to.
+     * @param savedInstanceState
+     *                     This fragment is being re-constructed from a previous saved state as given here.
+     * @return the View for the fragment's UI.
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // Display project's title on ActionBar.
         ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(R.string.app_name);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
 
-        // Inflate the layout for this fragment
-        View layout = inflater.inflate(R.layout.fragment_menu, container, false);
-        mImBHotel = layout.findViewById(R.id.main_activity_imb_hotel);
-        mImBAtm = layout.findViewById(R.id.main_activity_imb_atm);
-        mImBHospital = layout.findViewById(R.id.main_activity_imb_hospital);
-        mImBBus = layout.findViewById(R.id.main_activity_imb_bus);
+        // Inflate the layout for Menu Fragment.
+        View mMenuView = inflater.inflate(R.layout.fragment_menu, container, false);
+        mImBHotel = mMenuView.findViewById(R.id.main_activity_imb_hotel);
+        mImBAtm = mMenuView.findViewById(R.id.main_activity_imb_atm);
+        mImBHospital = mMenuView.findViewById(R.id.main_activity_imb_hospital);
+        mImBBus = mMenuView.findViewById(R.id.main_activity_imb_bus);
 
+        // Set click event for Hotel ImageButton.
         mImBHotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,12 +81,13 @@ public class MenuFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager
                         .beginTransaction()
-                        .replace(R.id.frame_layout, hotelFragment)
+                        .replace(R.id.activity_main_frame_layout, hotelFragment)
                         .addToBackStack(null)
                         .commit();
             }
         });
 
+        // Set click event for ATM ImageButton.
         mImBAtm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -83,12 +95,13 @@ public class MenuFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager
                         .beginTransaction()
-                        .replace(R.id.frame_layout, atmFragment)
+                        .replace(R.id.activity_main_frame_layout, atmFragment)
                         .addToBackStack(null)
                         .commit();
             }
         });
 
+        // Set click event for Hospital ImageButton.
         mImBHospital.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,12 +109,13 @@ public class MenuFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager
                         .beginTransaction()
-                        .replace(R.id.frame_layout, hospitalFragment)
+                        .replace(R.id.activity_main_frame_layout, hospitalFragment)
                         .addToBackStack(null)
                         .commit();
             }
         });
 
+        // Set click event for Bus ImageButton.
         mImBBus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -109,11 +123,11 @@ public class MenuFragment extends Fragment {
                 FragmentManager fragmentManager = getFragmentManager();
                 fragmentManager
                         .beginTransaction()
-                        .replace(R.id.frame_layout, busFragment)
+                        .replace(R.id.activity_main_frame_layout, busFragment)
                         .addToBackStack(null)
                         .commit();
             }
         });
-        return layout;
+        return mMenuView;
     }
 }

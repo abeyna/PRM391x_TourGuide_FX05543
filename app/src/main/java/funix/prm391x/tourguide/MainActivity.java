@@ -5,8 +5,14 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
+/**
+ * @author Luan N Nguyen
+ * @since April 20th 2021
+ *                     Main Activity of Project
+ */
 public class MainActivity extends AppCompatActivity {
-    private FrameLayout frameLayout;
+    /** Variable stores FrameLayout*/
+    private FrameLayout mFrameLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        frameLayout = findViewById(R.id.frame_layout);
+        mFrameLayout = findViewById(R.id.activity_main_frame_layout);
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout, new MenuFragment());
+        fragmentTransaction.replace(R.id.activity_main_frame_layout, new MenuFragment());
         fragmentTransaction.commit();
     }
 }
